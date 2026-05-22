@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Kaue Soares|Portfólio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Inicio</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contato" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="./img/perfil1.png" alt="Foto de Kaue Soares" class="foto-perfil">
+        <h1>Kauê Soares</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor Front-End </p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                &nbsp Sou um Desenvolvedor Front-End no inicio da trajetória. Busco meus conhecimentos de forma
+                autonoma, e estou sempre disposto a aprender coisas novas. Sou facinado pelo mundo da tecnologia, jogos
+                e desenvolvimento de software. Meu objetivo é me tornar um desenvolvedor Full-Stack, e contribuir para
+                projetos inovadores e impactantes. Estou animado para crescer profissionalmente e fazer parte de uma
+                equipe dinâmica onde possa aplicar minhas habilidades e aprender com os outros.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+
+            <div class="projetos-card">
+                <img src="./img/logo1.png" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Meow Café</h3>
+                    <p class="paragrafo-projetos">
+                        &nbsp Um projeto de cafeteria fictícia desenvolvido com HTML, CSS e JavaScript.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/CloudStore.jpg" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Cloud Store</h3>
+                    <p class="paragrafo-projetos">
+                        &nbsp Um projeto de loja virtual desenvolvido com HTML, CSS e JavaScript.
+                    </p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="./img/icon2.jpg" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projetos">
+                    <h3 class="info-projetos">Projeto 3</h3>
+                    <p class="paragrafo-projetos">
+                        &nbsp Um projeto de aplicação web desenvolvido com HTML, CSS e JavaScript.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhatsapp(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="5" id="mensagem"></textarea>
+            </div>
+
+            <button type="submit" class="botao-form">Enviar</button>
+        </form>
+    </section>
+    <script src="./scripts.js"></script>
+
+</body>
+
+</html>
